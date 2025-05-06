@@ -23,3 +23,4 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 # spainhn-seller-frontend-features-reserva-modal
+# spainhn-seller-frontend-features-reserva-modal
