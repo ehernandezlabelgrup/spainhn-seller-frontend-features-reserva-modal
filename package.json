@@ -1,0 +1,80 @@
+{
+  "name": "spainhn-seller-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 8082",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "build-staging": "vue-cli-service build --mode staging",
+    "postbuild-staging": "bash ./postbuild-scripts/build-deploy-files.sh",
+    "create-zip": "node postbuild-scripts/create-zip.js",
+    "lint": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve --open"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^2.0.8",
+    "archiver": "^7.0.1",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.3",
+    "bootstrap-vue": "^2.22.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.3",
+    "mdbvue": "git+https://oauth2:pdZSZnUnR-6YGz3akHzN@git.mdbootstrap.com/mdb/vue/vu-pro.git",
+    "moment": "^2.29.4",
+    "print-js": "^1.6.0",
+    "uuid": "^10.0.0",
+    "v-calendar": "^2.4.1",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.27.0",
+    "vue-router": "^3.2.0",
+    "vue-slick-carousel": "^1.0.6",
+    "vue-toastification": "^1.7.14",
+    "vuejs-datepicker": "^1.6.2",
+    "vuex": "^3.4.0",
+    "vuex-persist": "^3.1.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-eslint": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
+    "@vue/cli-plugin-vuex": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "fs": "^0.0.1-security",
+    "vue-cli-plugin-mdb": "~2.1.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-unused-vars": "off"
+    }
+  },
+  "browserslist": [
+    "> 0.2%",
+    "last 2 versions",
+    "not dead",
+    "not op_mini all"
+  ],
+  "tsconfig": {
+    "target": 2
+  }
+}

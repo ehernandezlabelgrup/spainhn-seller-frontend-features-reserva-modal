@@ -1,0 +1,57 @@
+:root{
+    --spainhn-rojo-claro: rgb(242,90,85);
+    --spainhn-gris-caja: rgb(225,225,225);
+    --spainhn-rojo-corporativo: rgb(165, 61, 57);
+}
+
+.spainheritage-table-header{
+    background-color: rgb(165, 61, 57) !important;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.spainhn-button{
+    background-color: var(--spainhn-rojo-corporativo) !important;
+    /* border-radius: 10px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* border: none !important; */
+    border-color: var(--spainhn-rojo-corporativo) !important;
+    color: white !important;
+}
+
+.spainhn-title-text{
+    font-size:1.5rem;
+    font-weight:bolder;
+    text-transform: uppercase;
+    background: var(--spainhn-rojo-corporativo);
+    /* background: -webkit-linear-gradient(rgba(242,90,85,1),  rgba(115,43,40,1)); */
+    /* background: linear-gradient(90deg,rgba(242,90,85,1),  rgba(115,43,40,1)); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgba(0,0,0,0);
+}
+
+.spainhn-small-text{
+    font-size: 0.7rem !important;
+}
+
+.spainhn-md-text{
+    font-size: 10pt !important;
+}
+
+.breadcrumb-with-arrows .breadcrumb-item+.breadcrumb-item::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0da";
+  }
+
+  .breadcrumb-with-double-arrows .breadcrumb-item+.breadcrumb-item::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f101";
+  }
